@@ -1,17 +1,8 @@
-"use client";
-import React, { useEffect } from "react";
-import { IoIosSearch } from "react-icons/io";
-import { ReactTyped } from "react-typed";
-import Lottie from "lottie-react";
-import search from "../../../public/home/search.json";
-import { useGlobalState } from "@/context/GlobalStateContext";
+
+import React from "react";
 import SearchBar from "../SearchBar";
 
 function FailedMessage() {
-	const { post } = useGlobalState();
-
-
-
 
 	return (
 		<div className="pt-[80px] pb-[120px]">

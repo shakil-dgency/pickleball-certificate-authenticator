@@ -1,12 +1,17 @@
 import Image from "next/image";
 import React from "react";
-import gallery1 from "../../../public/home/gallery1.png";
-import product from "../../../public/home/gallery1.png";
+import gallery1 from "../../../public/home/gallery/1.png";
+import gallery2 from "../../../public/home/gallery/2.png";
+import gallery3 from "../../../public/home/gallery/3.png";
+import gallery4 from "../../../public/home/gallery/4.png";
+import gallery5 from "../../../public/home/gallery/5.png";
+import gallery6 from "../../../public/home/gallery/6.png";
+import about from "../../../public/home/about us.png";
 
 function AboutAndGallery() {
 	return (
 		<div className="   relative ">
-			<div className="absolute inset-0 bg-[url('/home/aboutBG.png')] bg-no-repeat bg-cover opacity-60"></div>
+			<div className="absolute inset-0 bg-[url('/home/aboutBG.png')] bg-no-repeat bg-cover opacity-60 z-10"></div>
 			<div className="g__container flex flex-col md:flex-row items-center gap-6 sm:gap-10 pt-16">
 				<div className="flex-1">
 					<h2>About Us</h2>
@@ -30,18 +35,18 @@ function AboutAndGallery() {
 					</p>
 				</div>
 				<div className="flex-1 max-w-[500px]">
-					<Image src={product} height={600} width={500} className=" h-[600px] w-auto object-cover" alt="" />
+					<Image src={about} height={600} width={500} className=" h-[600px] w-auto object-cover" alt="" />
 				</div>
 			</div>
-			<div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-10 py-[120px] ">
+			<div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-10 py-[120px] relative z-30">
 				<Image src={gallery1} height={300} width={460} className="w-full h-full object-cover" alt="" />
-				<Image src={gallery1} height={600} width={500} className="w-full" alt="" />
-				<Image src={gallery1} height={600} width={500} className="w-full" alt="" />
-				<Image src={gallery1} height={600} width={500} className="w-full" alt="" />
-				<Image src={gallery1} height={600} width={500} className="w-full" alt="" />
-				<Image src={gallery1} height={600} width={500} className="w-full" alt="" />
+				<Image src={gallery2} height={600} width={500} className="w-full" alt="" />
+				<Image src={gallery3} height={600} width={500} className="w-full" alt="" />
+				<Image src={gallery4} height={600} width={500} className="w-full" alt="" />
+				<Image src={gallery5} height={600} width={500} className="w-full" alt="" />
+				<Image src={gallery6} height={600} width={500} className="w-full" alt="" />
 			</div>
-			<div className="h-[60px] w-full bg-gradient-to-b from-white to-transparent absolute -top-0"></div>
+			<div className="h-[60px] w-full bg-gradient-to-b from-white to-transparent absolute -top-0 z-10"></div>
 		</div>
 	);
 }

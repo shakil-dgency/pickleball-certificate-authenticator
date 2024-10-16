@@ -4,6 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "@/../../style/global.module.css";
+
 :root {
 	--background: #ffffff;
 	--foreground: #171717;
@@ -42,6 +44,11 @@ body {
 	.text-balance {
 		text-wrap: balance;
 	}
+}
+
+/* -------captcha------------ */
+.grecaptcha-badge{
+	opacity: 0;
 }
 
 .g__container {

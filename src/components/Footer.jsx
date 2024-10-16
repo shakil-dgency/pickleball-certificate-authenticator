@@ -21,9 +21,9 @@ function Footer() {
                 <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-4 leading-4">
                     <Link href={"/contact"}>Contact Us</Link>
                     <span className="w-[6px] h-[6px] bg-[#CECECE] rounded-full"></span>
-                    <span>Terms of Service</span>
+                    <Link href={'/terms-of-service'}>Terms of Service</Link>
                     <span className="w-[6px] h-[6px] bg-[#CECECE] rounded-full"></span>
-                    <span>Privacy Policy</span>
+                    <Link href={"/privacy-policy"}>Privacy Policy</Link>
                 </div>
             </div>
 		</div>

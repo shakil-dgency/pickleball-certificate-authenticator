@@ -1,9 +1,5 @@
 "use client";
 import React from "react";
-import { IoIosSearch } from "react-icons/io";
-import Lottie from "lottie-react";
-import search from "../../../../public/home/search.json";
-import { ReactTyped } from "react-typed";
 import SearchBar from "@/components/SearchBar";
 
 function Hero() {

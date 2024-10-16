@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React from "react";
 import logo from "../../../public/footer_logo.svg";
-import product from "../../../public/home/gallery1.png";
 import Lottie from "lottie-react";
 import check from "../../../public/IsverifiedOk/check.json";
 
