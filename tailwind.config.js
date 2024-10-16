@@ -11,9 +11,7 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      fontFamily: {
-        barlow: ['"Barlow"', 'sans-serif'], // Replace with your Google Font name
-      },
+    
     },
   },
   plugins: [],
