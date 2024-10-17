@@ -1,16 +1,16 @@
 
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-// import { Roboto } from "next/font/google";
+import { Roboto } from "next/font/google";
 import Footer from "@/components/Footer";
 
 import { GlobalStateProvider } from "@/context/GlobalStateContext";
 import Script from "next/script";
 
-// const roboto = Roboto({
-// 	subsets: ["latin"],
-// 	weight: ["100", "300", "400", "500", "700", "900"], // Specify the available font weights here
-// });
+const roboto = Roboto({
+	subsets: ["latin"],
+	weight: ["100", "300", "400", "500", "700", "900"], // Specify the available font weights here
+});
 
 
 export const metadata = {
@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={` antialiased flex flex-col min-h-screen`}>
+			<body className={`${roboto.className} antialiased flex flex-col min-h-screen`}>
 				<GlobalStateProvider>
 					<Navbar />
 					{children}
