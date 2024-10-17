@@ -26,7 +26,7 @@ function ContactForm() {
 		// 	const response = await Promise.race([axios.post(`${apiUrl}/api/send-contact-info`, newData)]);
 		// } catch (error) {
 		// 	console.log(error);
-		// }
+		// }git 
 	};
 
 
